@@ -1,9 +1,9 @@
 from Cython.Build import cythonize
 from setuptools import Extension, setup
 
-ext_modules = [Extension("controllers", ["controllers/*.pyx"], language="c++")]
+ext_modules = [Extension("controllers", ["src/*.pyx"], language="c++")]
 
 setup(
-    name="pid",
+    name="ccontrollers",
     ext_modules=cythonize(ext_modules),
 )
