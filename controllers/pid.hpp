@@ -6,5 +6,7 @@ namespace controllers {
       PID();
       ~PID();
       double get();
+    private:
+      double period = 0.01;
   };
 }

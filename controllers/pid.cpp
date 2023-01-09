@@ -1,11 +1,7 @@
-namespace controllers{
-  class PID {
-    private:
-      double period = 0.01;
+#include "pid.hpp"
 
-    public:
-      PID();
-      ~PID();
-      double get();
-  };
+namespace controllers{
+  double PID::get(){
+    return period;
+  }
 }
