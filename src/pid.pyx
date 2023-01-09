@@ -1,12 +1,12 @@
 # distutils: language = c++
 
-from pid cimport PID
+from pid_wrapper cimport PID_wrapper
 
 cdef class PID:
-    cdef PID c_pid
+    cdef PID_wrapper c_pid
 
     def __init__(self):
-        self.c_pid = PID()
+        self.c_pid = PID_wrapper()
 
     def get(self):
         return self.c_pid.get()
