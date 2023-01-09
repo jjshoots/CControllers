@@ -13,11 +13,11 @@
 namespace controllers{
   class PID {
     private:
-      PID();
-      ~PID();
       double period = 0.01;
 
     public:
+      PID();
+      ~PID();
       double get();
   };
 }

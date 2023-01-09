@@ -2,11 +2,8 @@
 
 from pid cimport PID
 
-# Create a Cython extension type which holds a C++ instance
-# as an attribute and create a bunch of forwarding methods
-# Python extension type.
-cdef class PyRectangle:
-    cdef PID c_pid  # Hold a C++ instance which we're wrapping
+cdef class PID:
+    cdef PID c_pid
 
     def __init__(self):
         self.c_pid = PID()
