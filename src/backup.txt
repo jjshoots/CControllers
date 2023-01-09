@@ -1,9 +1,0 @@
-#include "pid.hpp"
-
-namespace controllers {
-  PID::PID () {}
-
-  double PID::get () {
-    return 0.01;
-  }
-}
