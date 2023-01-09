@@ -4,19 +4,19 @@
 {
     "distutils": {
         "depends": [
-            "src/lib/pid.cpp",
-            "src/lib/pid.hpp"
+            "src/controllers/pid.cpp",
+            "src/controllers/pid.hpp"
         ],
         "include_dirs": [
             "src"
         ],
         "language": "c++",
-        "name": "pid",
+        "name": "controllers",
         "sources": [
             "src/pid.pyx"
         ]
     },
-    "module_name": "pid"
+    "module_name": "controllers"
 }
 END: Cython Metadata */
 
@@ -772,15 +772,15 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__pid
-#define __PYX_HAVE_API__pid
+#define __PYX_HAVE__controllers
+#define __PYX_HAVE_API__controllers
 /* Early includes */
-#include "lib/pid.cpp"
+#include "controllers/pid.cpp"
 #include "ios"
 #include "new"
 #include "stdexcept"
 #include "typeinfo"
-#include "lib/pid.hpp"
+#include "controllers/pid.hpp"
 #ifdef _OPENMP
 #include <omp.h>
 #endif /* _OPENMP */
@@ -995,16 +995,16 @@ static const char *__pyx_f[] = {
 };
 
 /*--- Type declarations ---*/
-struct __pyx_obj_3pid_PyRectangle;
+struct __pyx_obj_11controllers_PyRectangle;
 
-/* "pid.pyx":8
+/* "src/pid.pyx":8
  * # as an attribute and create a bunch of forwarding methods
  * # Python extension type.
  * cdef class PyRectangle:             # <<<<<<<<<<<<<<
  *     cdef PID c_pid  # Hold a C++ instance which we're wrapping
  * 
  */
-struct __pyx_obj_3pid_PyRectangle {
+struct __pyx_obj_11controllers_PyRectangle {
   PyObject_HEAD
   controllers::PID c_pid;
 };
@@ -1297,12 +1297,14 @@ static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 
 /* Module declarations from 'pid' */
-static PyTypeObject *__pyx_ptype_3pid_PyRectangle = 0;
-#define __Pyx_MODULE_NAME "pid"
-extern int __pyx_module_is_main_pid;
-int __pyx_module_is_main_pid = 0;
 
-/* Implementation of 'pid' */
+/* Module declarations from 'controllers' */
+static PyTypeObject *__pyx_ptype_11controllers_PyRectangle = 0;
+#define __Pyx_MODULE_NAME "controllers"
+extern int __pyx_module_is_main_controllers;
+int __pyx_module_is_main_controllers = 0;
+
+/* Implementation of 'controllers' */
 static PyObject *__pyx_builtin_TypeError;
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
@@ -1330,16 +1332,16 @@ static PyObject *__pyx_kp_s_self_c_pid_cannot_be_converted_t;
 static PyObject *__pyx_n_s_setstate;
 static PyObject *__pyx_n_s_setstate_cython;
 static PyObject *__pyx_n_s_test;
-static int __pyx_pf_3pid_11PyRectangle___init__(struct __pyx_obj_3pid_PyRectangle *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_3pid_11PyRectangle_2get(struct __pyx_obj_3pid_PyRectangle *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_3pid_11PyRectangle_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_3pid_PyRectangle *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_3pid_11PyRectangle_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_3pid_PyRectangle *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_3pid_PyRectangle(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static int __pyx_pf_11controllers_11PyRectangle___init__(struct __pyx_obj_11controllers_PyRectangle *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11controllers_11PyRectangle_2get(struct __pyx_obj_11controllers_PyRectangle *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11controllers_11PyRectangle_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_11controllers_PyRectangle *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_11controllers_11PyRectangle_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_11controllers_PyRectangle *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_11controllers_PyRectangle(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
 /* Late includes */
 
-/* "pid.pyx":11
+/* "src/pid.pyx":11
  *     cdef PID c_pid  # Hold a C++ instance which we're wrapping
  * 
  *     def __init__(self):             # <<<<<<<<<<<<<<
@@ -1348,22 +1350,22 @@ static PyObject *__pyx_tuple__2;
  */
 
 /* Python wrapper */
-static int __pyx_pw_3pid_11PyRectangle_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_3pid_11PyRectangle_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_11controllers_11PyRectangle_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_11controllers_11PyRectangle_1__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__ (wrapper)", 0);
   if (unlikely(PyTuple_GET_SIZE(__pyx_args) > 0)) {
     __Pyx_RaiseArgtupleInvalid("__init__", 1, 0, 0, PyTuple_GET_SIZE(__pyx_args)); return -1;}
   if (unlikely(__pyx_kwds) && unlikely(PyDict_Size(__pyx_kwds) > 0) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__init__", 0))) return -1;
-  __pyx_r = __pyx_pf_3pid_11PyRectangle___init__(((struct __pyx_obj_3pid_PyRectangle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11controllers_11PyRectangle___init__(((struct __pyx_obj_11controllers_PyRectangle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_3pid_11PyRectangle___init__(struct __pyx_obj_3pid_PyRectangle *__pyx_v_self) {
+static int __pyx_pf_11controllers_11PyRectangle___init__(struct __pyx_obj_11controllers_PyRectangle *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   controllers::PID __pyx_t_1;
@@ -1372,7 +1374,7 @@ static int __pyx_pf_3pid_11PyRectangle___init__(struct __pyx_obj_3pid_PyRectangl
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "pid.pyx":12
+  /* "src/pid.pyx":12
  * 
  *     def __init__(self):
  *         self.c_pid = PID()             # <<<<<<<<<<<<<<
@@ -1387,7 +1389,7 @@ static int __pyx_pf_3pid_11PyRectangle___init__(struct __pyx_obj_3pid_PyRectangl
   }
   __pyx_v_self->c_pid = __pyx_t_1;
 
-  /* "pid.pyx":11
+  /* "src/pid.pyx":11
  *     cdef PID c_pid  # Hold a C++ instance which we're wrapping
  * 
  *     def __init__(self):             # <<<<<<<<<<<<<<
@@ -1399,14 +1401,14 @@ static int __pyx_pf_3pid_11PyRectangle___init__(struct __pyx_obj_3pid_PyRectangl
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("pid.PyRectangle.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("controllers.PyRectangle.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "pid.pyx":14
+/* "src/pid.pyx":14
  *         self.c_pid = PID()
  * 
  *     def get(self):             # <<<<<<<<<<<<<<
@@ -1414,19 +1416,19 @@ static int __pyx_pf_3pid_11PyRectangle___init__(struct __pyx_obj_3pid_PyRectangl
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3pid_11PyRectangle_3get(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_3pid_11PyRectangle_3get(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_11controllers_11PyRectangle_3get(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_11controllers_11PyRectangle_3get(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get (wrapper)", 0);
-  __pyx_r = __pyx_pf_3pid_11PyRectangle_2get(((struct __pyx_obj_3pid_PyRectangle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11controllers_11PyRectangle_2get(((struct __pyx_obj_11controllers_PyRectangle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3pid_11PyRectangle_2get(struct __pyx_obj_3pid_PyRectangle *__pyx_v_self) {
+static PyObject *__pyx_pf_11controllers_11PyRectangle_2get(struct __pyx_obj_11controllers_PyRectangle *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1435,7 +1437,7 @@ static PyObject *__pyx_pf_3pid_11PyRectangle_2get(struct __pyx_obj_3pid_PyRectan
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get", 0);
 
-  /* "pid.pyx":15
+  /* "src/pid.pyx":15
  * 
  *     def get(self):
  *         return self.c_pid.get()             # <<<<<<<<<<<<<<
@@ -1447,7 +1449,7 @@ static PyObject *__pyx_pf_3pid_11PyRectangle_2get(struct __pyx_obj_3pid_PyRectan
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pid.pyx":14
+  /* "src/pid.pyx":14
  *         self.c_pid = PID()
  * 
  *     def get(self):             # <<<<<<<<<<<<<<
@@ -1457,7 +1459,7 @@ static PyObject *__pyx_pf_3pid_11PyRectangle_2get(struct __pyx_obj_3pid_PyRectan
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pid.PyRectangle.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("controllers.PyRectangle.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -1472,19 +1474,19 @@ static PyObject *__pyx_pf_3pid_11PyRectangle_2get(struct __pyx_obj_3pid_PyRectan
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3pid_11PyRectangle_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_3pid_11PyRectangle_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_11controllers_11PyRectangle_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_11controllers_11PyRectangle_5__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_3pid_11PyRectangle_4__reduce_cython__(((struct __pyx_obj_3pid_PyRectangle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_11controllers_11PyRectangle_4__reduce_cython__(((struct __pyx_obj_11controllers_PyRectangle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3pid_11PyRectangle_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_3pid_PyRectangle *__pyx_v_self) {
+static PyObject *__pyx_pf_11controllers_11PyRectangle_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_11controllers_PyRectangle *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1514,7 +1516,7 @@ static PyObject *__pyx_pf_3pid_11PyRectangle_4__reduce_cython__(CYTHON_UNUSED st
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pid.PyRectangle.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("controllers.PyRectangle.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -1529,19 +1531,19 @@ static PyObject *__pyx_pf_3pid_11PyRectangle_4__reduce_cython__(CYTHON_UNUSED st
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_3pid_11PyRectangle_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_3pid_11PyRectangle_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_11controllers_11PyRectangle_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_11controllers_11PyRectangle_7__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_3pid_11PyRectangle_6__setstate_cython__(((struct __pyx_obj_3pid_PyRectangle *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_11controllers_11PyRectangle_6__setstate_cython__(((struct __pyx_obj_11controllers_PyRectangle *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_3pid_11PyRectangle_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_3pid_PyRectangle *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_11controllers_11PyRectangle_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_11controllers_PyRectangle *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -1571,15 +1573,15 @@ static PyObject *__pyx_pf_3pid_11PyRectangle_6__setstate_cython__(CYTHON_UNUSED 
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("pid.PyRectangle.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("controllers.PyRectangle.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_tp_new_3pid_PyRectangle(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_3pid_PyRectangle *p;
+static PyObject *__pyx_tp_new_11controllers_PyRectangle(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_11controllers_PyRectangle *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -1587,13 +1589,13 @@ static PyObject *__pyx_tp_new_3pid_PyRectangle(PyTypeObject *t, CYTHON_UNUSED Py
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_3pid_PyRectangle *)o);
+  p = ((struct __pyx_obj_11controllers_PyRectangle *)o);
   new((void*)&(p->c_pid)) controllers::PID();
   return o;
 }
 
-static void __pyx_tp_dealloc_3pid_PyRectangle(PyObject *o) {
-  struct __pyx_obj_3pid_PyRectangle *p = (struct __pyx_obj_3pid_PyRectangle *)o;
+static void __pyx_tp_dealloc_11controllers_PyRectangle(PyObject *o) {
+  struct __pyx_obj_11controllers_PyRectangle *p = (struct __pyx_obj_11controllers_PyRectangle *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -1603,19 +1605,19 @@ static void __pyx_tp_dealloc_3pid_PyRectangle(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static PyMethodDef __pyx_methods_3pid_PyRectangle[] = {
-  {"get", (PyCFunction)__pyx_pw_3pid_11PyRectangle_3get, METH_NOARGS, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_3pid_11PyRectangle_5__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_3pid_11PyRectangle_7__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_11controllers_PyRectangle[] = {
+  {"get", (PyCFunction)__pyx_pw_11controllers_11PyRectangle_3get, METH_NOARGS, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_11controllers_11PyRectangle_5__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_11controllers_11PyRectangle_7__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_3pid_PyRectangle = {
+static PyTypeObject __pyx_type_11controllers_PyRectangle = {
   PyVarObject_HEAD_INIT(0, 0)
-  "pid.PyRectangle", /*tp_name*/
-  sizeof(struct __pyx_obj_3pid_PyRectangle), /*tp_basicsize*/
+  "controllers.PyRectangle", /*tp_name*/
+  sizeof(struct __pyx_obj_11controllers_PyRectangle), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_3pid_PyRectangle, /*tp_dealloc*/
+  __pyx_tp_dealloc_11controllers_PyRectangle, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -1648,7 +1650,7 @@ static PyTypeObject __pyx_type_3pid_PyRectangle = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_3pid_PyRectangle, /*tp_methods*/
+  __pyx_methods_11controllers_PyRectangle, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -1656,9 +1658,9 @@ static PyTypeObject __pyx_type_3pid_PyRectangle = {
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_3pid_11PyRectangle_1__init__, /*tp_init*/
+  __pyx_pw_11controllers_11PyRectangle_1__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_3pid_PyRectangle, /*tp_new*/
+  __pyx_tp_new_11controllers_PyRectangle, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -1689,17 +1691,17 @@ static PyMethodDef __pyx_methods[] = {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_pid(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_controllers(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_pid},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_controllers},
   {0, NULL}
 };
 #endif
 
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
-    "pid",
+    "controllers",
     0, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
@@ -1825,16 +1827,16 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  if (PyType_Ready(&__pyx_type_3pid_PyRectangle) < 0) __PYX_ERR(1, 8, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_11controllers_PyRectangle) < 0) __PYX_ERR(1, 8, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_3pid_PyRectangle.tp_print = 0;
+  __pyx_type_11controllers_PyRectangle.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_3pid_PyRectangle.tp_dictoffset && __pyx_type_3pid_PyRectangle.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_3pid_PyRectangle.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_11controllers_PyRectangle.tp_dictoffset && __pyx_type_11controllers_PyRectangle.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_11controllers_PyRectangle.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PyRectangle, (PyObject *)&__pyx_type_3pid_PyRectangle) < 0) __PYX_ERR(1, 8, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_3pid_PyRectangle) < 0) __PYX_ERR(1, 8, __pyx_L1_error)
-  __pyx_ptype_3pid_PyRectangle = &__pyx_type_3pid_PyRectangle;
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_PyRectangle, (PyObject *)&__pyx_type_11controllers_PyRectangle) < 0) __PYX_ERR(1, 8, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_11controllers_PyRectangle) < 0) __PYX_ERR(1, 8, __pyx_L1_error)
+  __pyx_ptype_11controllers_PyRectangle = &__pyx_type_11controllers_PyRectangle;
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -1885,11 +1887,11 @@ static int __Pyx_modinit_function_import_code(void) {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initpid(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initpid(void)
+__Pyx_PyMODINIT_FUNC initcontrollers(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initcontrollers(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_pid(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_pid(void)
+__Pyx_PyMODINIT_FUNC PyInit_controllers(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_controllers(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -1956,7 +1958,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_pid(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_controllers(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -1968,7 +1970,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_pid(PyObject *__pyx_pyinit_module)
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'pid' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'controllers' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -1983,7 +1985,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_pid(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_controllers(void)", 0);
   if (__Pyx_check_binary_version() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -2020,7 +2022,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("pid", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("controllers", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -2038,14 +2040,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_pid) {
+  if (__pyx_module_is_main_controllers) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name, __pyx_n_s_main) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(1, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "pid")) {
-      if (unlikely(PyDict_SetItemString(modules, "pid", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "controllers")) {
+      if (unlikely(PyDict_SetItemString(modules, "controllers", __pyx_m) < 0)) __PYX_ERR(1, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -2066,7 +2068,7 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "pid.pyx":1
+  /* "src/pid.pyx":1
  * # distutils: language = c++             # <<<<<<<<<<<<<<
  * 
  * from pid cimport PID
@@ -2083,11 +2085,11 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_1);
   if (__pyx_m) {
     if (__pyx_d) {
-      __Pyx_AddTraceback("init pid", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init controllers", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     Py_CLEAR(__pyx_m);
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init pid");
+    PyErr_SetString(PyExc_ImportError, "init controllers");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

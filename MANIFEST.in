@@ -1,2 +1,0 @@
-include CMakeLists.txt
-include src/tinyscaler.pyx src/scaler.h src/scaler.c
